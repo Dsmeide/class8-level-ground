@@ -1,0 +1,172 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+header {
+  height: 100px;
+  background:rgb(138, 154, 172);
+  /* border: 1px solid blue; */
+}
+header nav > *{
+  float: left;
+  width: 33.333%;
+  border: 1px solid red;
+}
+header nav li {
+  float: left;
+  width: 20%;
+  list-style: none;
+  /* border: 1px solid green; */
+}
+header nav img {
+  padding: 0 12%;
+}
+header nav img + a {
+  text-align: right;
+  padding-right: 2%;
+}
+main {
+  background-color:rgb(138, 154, 172);
+  text-align: center;
+  padding-bottom: 5px;
+  margin-top: 0;
+  color: white;
+}
+main h1 {
+  margin-top: 0;
+}
+main a {
+  color: white;
+  text-decoration: none;
+}
+main p {
+  padding: 10px 80px;
+}
+main span {
+  display: block;
+  margin: 30px 0 20px 0;
+  color: rgb(95, 95, 95);
+}
+main + section {
+  background: white;
+  height: 25%;
+}
+main + section *{
+  text-align: center;
+  padding: 5px 100px;
+}
+main + section {
+  padding: 50px 0;
+}
+.sideBySide {
+  width: 100%;
+  height: 400px;
+}
+.sideBySide section {
+  width: 50%;
+  float: left;
+  background: rgb(214, 214, 214);
+  padding: 50px 0;
+}
+.sideBySide *{
+  text-align: center;
+  margin: 0 auto;
+}
+.sideBySide h3 {
+  padding: 20px 60px 5px 60px;
+  
+}
+.sideBySide p {
+  padding: 0 80px 30px 80px;
+}
+div {
+  height: 100px;
+  width: 200px;
+  background:rgb(138, 154, 172);
+}
+.sideBySide a {
+  color: black;
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 5px 20px;
+  font-size: 10px;
+  font-weight: bold;
+}
+.sideBySide + section {
+  background: white;
+  text-align: center;
+  padding: 40px 0;
+}
+.sideBySide + section > h2 {
+  
+  
+}
+
+footer {
+  background: black;
+  height: 220px;
+  /* border: 1px solid red; */
+}
+footer * {
+  color: white;
+}
+footer > section {
+  float: left;
+  height: 150px;
+  /* border: 1px solid red; */
+  width: 50%;
+}
+footer > section + section {
+  float: left;
+  height: 150px;
+  /* border: 1px solid red; */
+  width: 50%;
+}
+footer > section + section * {
+  font-size: 10px;
+}
+footer > section + section h3 {
+  text-align: right;
+}
+footer > section + section + section {
+  height: 100px;
+  border-top: 2px solid white;
+  width: 100%;
+}
+footer > section + section + section img {
+  float: right;
+  
+  
+  
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
